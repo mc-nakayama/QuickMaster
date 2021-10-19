@@ -18,4 +18,11 @@ public class ViewController{
 		model.addAttribute("name","山田");
 		return "view/format";
 	}
+
+	@GetMapping("/view/attr")
+	public String attr(Model model){
+		model.addAttribute("url",
+		"https://wings.msn.to/");
+		return "view/attr";
+	}
 }
