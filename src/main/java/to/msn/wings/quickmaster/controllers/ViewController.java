@@ -12,4 +12,10 @@ public class ViewController{
 		model.addAttribute("message", "<h1>こんにちは</h1>" + "<span><a href ='https://spring.io/projects/spring-boot/'>Spring Boot!!</a></span>");
 		return "view/html"; 
 	}
+
+	@GetMapping("/view/format")
+	public String format( Model model){
+		model.addAttribute("name","山田");
+		return "view/format";
+	}
 }
